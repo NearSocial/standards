@@ -6,7 +6,7 @@ Badges issued by the account and holders for each of these badges.
 
 | Key | Type | Description |
 | --- | --- | --- |
-| **`[badge_name]`** | [Badge](code/standards/types/badge/Badge.mdards/types/badge/Badge.md) | The key is the name of a badge. For example, `whale` or `real_human`. |
+| **`[badge_name]`** | [Badge](./Badge.md) | The key is the name of a badge. For example, `whale` or `real_human`. |
 
 ## Example
 
