@@ -9,6 +9,7 @@ Top level schema for an account
 | _`profile`_ | [Profile](./profile/Profile.md) | A profile information for the account |
 | _`graph`_ | [Graph](./graph/Graph.md) | The outgoing graph connections from the account |
 | _`badge`_ | [Badges](./badge/Badges.md) | Badges issued by the account and recipients of these badges |
+| _`widget`_ | [Widgets](./widget/Widgets.md) | Widgets created by the account |
 
 ## Example
 
@@ -44,6 +45,10 @@ Top level schema for an account
         "root.near": ""
       }
     }
+  },
+  "widget": {
+    "HelloWorld": "return \"Hello World!\";",
+    "Test": "return \"Test!\";"
   }
 }
 ```

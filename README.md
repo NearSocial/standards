@@ -10,6 +10,5 @@
 **[Each account should follow the Root schema](./types/Root.md)**
 
 ## TBD:
-- Social Graph
-- Badge
 - Status update/Post
+- Images with IPFS and Arweave.
