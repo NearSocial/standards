@@ -51,6 +51,6 @@ An API server should be able to serve the following data:
 ```json
 {
   "like": "{\"index\":\"mob.near/post/meme@76735731\",\"data\":1}",
-  "comment": "{\"index\":\"mob.near/post/meme@76735731\",\"data\":{\"type\":\"meme\"}}"
+  "comment": "{\"index\":\"mob.near/post/meme@76735731\",\"data\":{\"type\":\"post/meme\"}}"
 }
 ```
