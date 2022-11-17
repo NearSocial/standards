@@ -8,14 +8,27 @@ Account's profile information.
 | --- | --- | --- |
 | **`name`** | String(64) | The display name of the account |
 | _`image`_ | [Image](../common/Image.md) | The profile picture |
+| _`backgroundImage`_ | [Image](../common/Image.md) | The background image for the profile page |
+| _`description`_ | Markdown(String) | The profile description in markdown format |
+| _`linktree`_ | [LinkTree](./LinkTree.md) | A set of links for the profile |
 
 ## Example
 
 ```json
 {
-  "name": "NEARCON 22 Demo Acc",
+  "name": "Near Social",
   "image": {
-    "url": "https://cloudflare-ipfs.com/ipfs/QmQqzMTavQgT4f4T5v6PWBp7XNKtoPmC9jvn12WPT3gkSE"
+    "ipfs_cid": "bafkreid55mbassw335wezjk3gc5rzizwrqpenfxk3dyyljumxvezplhjg4"
+  },
+  "linktree": {
+    "twitter": "NearSocial_",
+    "github": "NearSocial",
+    "telegram": "NearSocial",
+    "website": "near.social"
+  },
+  "description": "# Near Social\n\n**Near Social** is ...",
+  "backgroundImage": {
+    "ipfs_cid": "bafybeigwqqx2eccpyip66bn2bn6janvss2snv3xuuus3ltin6i46mfkyam"
   }
 }
 ```

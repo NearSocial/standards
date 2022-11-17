@@ -10,6 +10,8 @@ Top level schema for an account
 | _`graph`_ | [Graph](./graph/Graph.md) | The outgoing graph connections from the account |
 | _`badge`_ | [Badges](./badge/Badges.md) | Badges issued by the account and recipients of these badges |
 | _`widget`_ | [Widgets](./widget/Widgets.md) | Widgets created by the account |
+| _`post`_ | [Posts](./post/Posts.md) | Posts created by the account |
+| _`settings`_ | [Settings](./settings/Settings.md) | Settings stored by the account |
 
 ## Example
 
@@ -49,6 +51,15 @@ Top level schema for an account
   "widget": {
     "HelloWorld": "return \"Hello World!\";",
     "Test": "return \"Test!\";"
+  },
+  "post": {
+    "meme": {
+      "title": "NEAR Protocol",
+      "description": "Looks the same to me",
+      "image": {
+        "ipfs_cid": "bafkreicrp3nosvz4advbmp26dlmbjkl37gb7etztqf4gforuwxg5ofqov4"
+      }
+    }
   }
 }
 ```
