@@ -9,9 +9,9 @@ It should be used for actions associated with some key. For example:
 
 In order for the API server to index the data, it should be given in a specific format. Otherwise, the API server will ignore the data.
 
-The format is `IndexData` which is a serialized JSON object with two keys: `key` and `data`.
+The format is `IndexData` which is a serialized JSON object with two keys: `key` and `value`.
 - The `key` value will be used to index the data across all accounts. The API server will JSON serialize the value to create a unique string key for this index.
-- The `data` value contains the data to be stored.
+- The `value` value contains the data to be stored.
  
 ### Likes example
 
@@ -20,14 +20,14 @@ The post is identified by the following key: `mob.near/post/meme@76735731`. Then
 ```json
 {
   "key": "mob.near/post/meme@76735731",
-  "data": 1
+  "value": 1
 }
 ```
 This object will be serialized and should be added under `index/like`:
 ```json
 {
   "index": {
-    "like": "{\"key\":\"mob.near/post/meme@76735731\",\"data\":1}"
+    "like": "{\"key\":\"mob.near/post/meme@76735731\",\"value\":1}"
   }
 }
 ```
@@ -44,13 +44,13 @@ An API server should be able to serve the following data:
 
 | Key | Type | Description                                                                                                                                  |
 | --- | --- |----|
-| **`[index_type]`** | Serialized IndexData (String) | The key is the type of index. For example, `like` or `comment`. The value is a serialized JSON object containing two fields `"key"` and `"data"` |
+| **`[index_type]`** | Serialized IndexData (String) | The key is the type of index. For example, `like` or `comment`. The value is a serialized JSON object containing two fields `"key"` and `"value"` |
 
 ## Example
 
 ```json
 {
-  "like": "{\"key\":\"mob.near/post/meme@76735731\",\"data\":1}",
-  "comment": "{\"key\":\"mob.near/post/meme@76735731\",\"data\":{\"type\":\"post/meme\"}}"
+  "like": "{\"key\":\"mob.near/post/meme@76735731\",\"value\":1}",
+  "comment": "{\"key\":\"mob.near/post/meme@76735731\",\"value\":{\"type\":\"post/meme\"}}"
 }
 ```
