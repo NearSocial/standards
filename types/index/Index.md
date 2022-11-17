@@ -9,7 +9,7 @@ It should be used for actions associated with some key. For example:
 
 In order for the API server to index the data, it should be given in a specific format. Otherwise, the API server will ignore the data.
 
-The format is `IndexData` which is a serialized JSON object with two keys: `key` and `value`.
+The format is `IndexData` which is a serialized JSON object with two keys: `key` and `data`.
 - The `key` value will be used to index the data across all accounts. The API server will JSON serialize the value to create a unique string key for this index.
 - The `data` value contains the data to be stored.
  
