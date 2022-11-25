@@ -9,7 +9,7 @@ It should be used for actions associated with some key. For example:
 
 In order for the API server to index the data, it should be given in a specific format. Otherwise, the API server will ignore the data.
 
-The format is `IndexData` which is a serialized JSON object with two keys: `key` and `value`.
+The format is `IndexData` is a serialized JSON. It's either a single object with two keys: `key` and `value`, or an array of such objects.
 - The `key` value will be used to index the data across all accounts. The API server will JSON serialize the value to create a unique string key for this index.
 - The `value` value contains the data to be stored.
  
@@ -39,6 +39,36 @@ An API server should be able to serve the following data:
 - All likes for a given post from all users (or some users) ordered by block height when they were created.
 - All likes for a given user ordered by block height.
 
+### Multi-notify example
+
+An app wants to notify multiple users, e.g. Alice follows Bob and Charlie in one action. She can indicate this in the graph index in one call:
+
+```json
+[
+  {
+    "key": "follow",
+    "value": {
+      "type": "follow",
+      "accountId": "bob.near"
+    }
+  },
+  {
+    "key": "follow",
+    "value": {
+      "type": "follow",
+      "accountId": "charlie.near"
+    }
+  }
+]
+```
+This will be serialized to JSON and should be added under `index/graph`:
+```json
+{
+  "index": {
+    "graph": "[{\"key\":\"follow\",\"value\":{\"type\":\"follow\",\"accountId\":\"bob.near\"}},{\"key\":\"follow\",\"value\":{\"type\":\"follow\",\"accountId\":\"charlie.near\"}}]"
+  }
+}
+```
 
 ## Schema
 
@@ -51,6 +81,7 @@ An API server should be able to serve the following data:
 ```json
 {
   "like": "{\"key\":\"mob.near/post/meme@76735731\",\"value\":1}",
-  "comment": "{\"key\":\"mob.near/post/meme@76735731\",\"value\":{\"type\":\"post/meme\"}}"
+  "comment": "{\"key\":\"mob.near/post/meme@76735731\",\"value\":{\"type\":\"post/meme\"}}",
+  "graph": "[{\"key\":\"follow\",\"value\":{\"type\":\"follow\",\"accountId\":\"bob.near\"}},{\"key\":\"follow\",\"value\":{\"type\":\"follow\",\"accountId\":\"charlie.near\"}}]"
 }
 ```
