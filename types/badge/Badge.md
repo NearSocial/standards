@@ -4,10 +4,10 @@ A Badge with the metadata and the list of the holders.
 
 ## Schema
 
-| Key | Type | Description |
-| --- | --- | --- |
-| **`info`** | [Badge Info](./Info.md) | The information describing the badge |
-| **`holder`** | [Account List](../common/AccountList.md) | The list of the badge holders who were awarded with this badge |
+| Key            | Type                                     | Description                                                    |
+|----------------|------------------------------------------|----------------------------------------------------------------|
+| **`metadata`** | [Metadata](../common/Metadata.md)        | The metadata information describing the badge                  |
+| **`holder`**   | [Account List](../common/AccountList.md) | The list of the badge holders who were awarded with this badge |
 
 ## Example
 

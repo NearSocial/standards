@@ -27,6 +27,8 @@ const linktreeElements = {
 };
 ```
 
+NOTE, this is not the schema. It's just the common keys used by the existing components.
+
 ## Schema
 
 | Key | Type | Description |

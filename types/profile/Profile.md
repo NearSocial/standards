@@ -10,7 +10,7 @@ Account's profile information.
 | _`image`_ | [Image](../common/Image.md) | The profile picture |
 | _`backgroundImage`_ | [Image](../common/Image.md) | The background image for the profile page |
 | _`description`_ | Markdown(String) | The profile description in markdown format |
-| _`linktree`_ | [LinkTree](./LinkTree.md) | A set of links for the profile |
+| _`linktree`_ | [LinkTree](code/standards/types/common/LinkTree.md) | A set of links for the profile |
 
 ## Example
 
