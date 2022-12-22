@@ -4,14 +4,14 @@ Top level schema for an account
 
 ## Schema
 
-| Key | Type | Description |
-| --- | --- | --- |
-| _`profile`_ | [Profile](./profile/Profile.md) | A profile information for the account |
-| _`graph`_ | [Graph](./graph/Graph.md) | The outgoing graph connections from the account |
-| _`badge`_ | [Badges](./badge/Badges.md) | Badges issued by the account and recipients of these badges |
-| _`widget`_ | [Widgets](./widget/Widgets.md) | Widgets created by the account |
-| _`post`_ | [Posts](./post/Posts.md) | Posts created by the account |
-| _`settings`_ | [Settings](./settings/Settings.md) | Settings stored by the account |
+| Key          | Type                               | Description                                                 |
+|--------------|------------------------------------|-------------------------------------------------------------|
+| _`profile`_  | [Metadata](./common/Metadata.md)   | A profile information for the account                       |
+| _`graph`_    | [Graph](./graph/Graph.md)          | The outgoing graph connections from the account             |
+| _`badge`_    | [Badges](./badge/Badges.md)        | Badges issued by the account and recipients of these badges |
+| _`widget`_   | [Widgets](./widget/Widgets.md)     | Widgets created by the account                              |
+| _`post`_     | [Posts](./post/Posts.md)           | Posts created by the account                                |
+| _`settings`_ | [Settings](./settings/Settings.md) | Settings stored by the account                              |
 
 ## Example
 
