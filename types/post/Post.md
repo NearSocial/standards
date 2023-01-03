@@ -1,4 +1,4 @@
-# Post
+# Post [DRAFT]
 
 This standard is in DRAFT mode. It may be heavily changed in the future.
 
