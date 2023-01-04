@@ -13,7 +13,7 @@ A Badge with the metadata and the list of the holders.
 
 ```json
 {
-  "info": {
+  "metadata": {
     "name": "Whale",
     "description": "A really whalethy user",
     "image": {
