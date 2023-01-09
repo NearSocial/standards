@@ -13,7 +13,7 @@ Badges issued by the account and holders for each of these badges.
 ```json
 {
   "whale": {
-    "info": {
+    "metadata": {
       "name": "Whale",
       "description": "A really whalethy user",
       "image": {
