@@ -20,7 +20,7 @@ The image should be displayed in the following priority order:
 
 ```json
 {
-  "img": "https://cloudflare-ipfs.com/ipfs/QmQqzMTavQgT4f4T5v6PWBp7XNKtoPmC9jvn12WPT3gkSE"
+  "url": "https://cloudflare-ipfs.com/ipfs/QmQqzMTavQgT4f4T5v6PWBp7XNKtoPmC9jvn12WPT3gkSE"
 }
 ```
 
