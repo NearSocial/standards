@@ -1,21 +1,12 @@
-# Post [DRAFT]
+# Post (TBD)
 
-This standard is in DRAFT mode. It may be heavily changed in the future.
-
-## Schema
+## Schema (TBD)
 
 The SCHEMA is to be described.
 
-## Example
-
-The format used for storing Memes:
+## Example (TBD)
 
 ```json
 {
-  "title": "NEAR Protocol",
-  "description": "Looks the same to me",
-  "image": {
-    "ipfs_cid": "bafkreicrp3nosvz4advbmp26dlmbjkl37gb7etztqf4gforuwxg5ofqov4"
-  }
 }
 ```
